@@ -29,6 +29,11 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
       Alternative: Set it to true and install trash-cli (sudo apt install trash-cli).
   - noice.lua
     - icons came up as 󰥻, changed them to digraph symbols (minor change not important)
+  - snacks.lua
+    - changed cmd = "ascii-image-converter ~/Desktop/Others/profiles.JPG -C -c"
+      new location for assets = .config/nvim/assets
+      changed from a static picture into a function that selects pitures dynamically
+  
 
 ### Installs
 - sudo apt install luarocks \
