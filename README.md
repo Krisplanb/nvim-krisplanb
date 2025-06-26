@@ -16,6 +16,11 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
 
 ## Notes
 
+- the base from sin-cy was made for mac
 - This config is built and tested on Linux only.
 - Some features may not work on macOS or Windows.
+
+## intentions and Milestones
+
+- first goal is to adapt to linux based setup
 
