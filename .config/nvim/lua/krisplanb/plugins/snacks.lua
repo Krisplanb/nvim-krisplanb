@@ -117,7 +117,7 @@ return {
                     notify = true,
                     command = "magick"
                 },
-                img_dirs = { "img", "images", "assets", "static", "public", "media", "attachments","Archives/All-Vault-Images/", "~/Library", "~/Downloads" },
+                img_dirs = { "img", "images", "assets", "static", "public", "media", "attachments","~/.config/nvim/assets", "~/Pictures", "~/Downloads" },
             },
             dashboard = {
                 enabled = true,
