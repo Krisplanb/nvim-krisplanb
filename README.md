@@ -31,11 +31,15 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
     - icons came up as 󰥻, changed them to digraph symbols (minor change not important)
   - snacks.lua
     - changed cmd = "ascii-image-converter ~/Desktop/Others/profiles.JPG -C -c"
-      new location for assets = .config/nvim/assets
-      changed from a static picture into a function that selects pitures dynamically
+       - new location for assets = .config/nvim/assets
+       - changed from a static picture into a function that selects pictures dynamically
+- first time cloning to new system
+  -
   
+### time cloning
+- 
 
 ### Installs
-- sudo apt install luarocks \
-- luarocks install pcre2      \>- these two installed in order
+- sudo apt install luarocks
+- luarocks install pcre2
 - 
