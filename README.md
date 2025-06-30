@@ -57,7 +57,7 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
 - mason giving warnings about not installing pylint and isort, commented out.
 - installs seem to work fine now.
 - make installation script
-  
+  - as an atempt at saving time. i tried feeding this into chat gippity and asking for a setup script. for fun i wont check it before running it on the next VM.
 ## third time cloning
 -
 
