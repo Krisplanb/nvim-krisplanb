@@ -34,18 +34,33 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
        - new location for assets = .config/nvim/assets
        - changed from a static picture into a function that selects pictures dynamically
 - first time cloning to new system
-  -
   
 ### first time cloning
 - forgot to change a bunch of req(sethy.something) to req(krisplanb.samething)
 - lots of red text. need to run | sudo apt install -y build-essential
+- snacks.lua
+  - dashboard cmd doesnt accept functions directly. changed it. remember! change in git
+- several issues with missing installs. gradually finding out which is needed.
+- making an install list.
+- apt install neovim gives wrong version, need to learn other ways to install.
+- make install guide for neovim 11.2
+- now stable
+- make a new vm start from scratch. follow instructions to see if it is complete.
 
+### second time cloning
 - 
-- 
+
 ### Installs
 - sudo apt install luarocks
 - luarocks install pcre2
--
+- sudo apt install -y build-essential
+- sudo apt install -y git curl unzip ripgrep fd-find n pm
+- sudo apt install ascii-image-converter
+- sudo apt install npm
+- sudo apt install unzip python3 python3-pip golang
+- sudo apt install pylint isort
+- sudo npm install -g pyright
+
 ## Neovim installation Ubuntu server 24.04
 ### i had a hard time figuring this out since im used to apt install, that leads to neovim 9.0 as of me writing this. had to learn a bit more about tarball to get version 11.2.
 - this is how i ended up doing it and having it work for me. im very open to other ways than this, i dont realy like it, but im not entierly sure why.
