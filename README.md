@@ -36,9 +36,11 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
 - first time cloning to new system
   -
   
-### time cloning
+### first time cloning
+- forgot to change a bunch of req(sethy.something) to req(krisplanb.samething)
 - 
-
+- 
+- 
 ### Installs
 - sudo apt install luarocks
 - luarocks install pcre2
