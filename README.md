@@ -38,10 +38,21 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
   
 ### first time cloning
 - forgot to change a bunch of req(sethy.something) to req(krisplanb.samething)
-- 
+- lots of red text. need to run | sudo apt install -y build-essential
+
 - 
 - 
 ### Installs
 - sudo apt install luarocks
 - luarocks install pcre2
-- 
+-
+## Neovim installation Ubuntu server 24.04
+# i had a hard time figuring this out since im used to apt install, that leads to neovim 9.0 as of me writing this. had to learn a bit more about tarball to get version 11.2.
+- this is how i ended up doing it and having it work for me. im very open to other ways than this, i dont realy like it, but im not entierly sure why.
+
+  - curl -LO https://github.com/neovim/neovim/releases/download/v0.11.2/nvim-linux-x86_64.tar.gz
+  - tar xzvf nvim-linux-x86_64.tar.gz
+  - sudo mv nvim-linux-x86_64 /opt/nvim
+  - sudo ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim
+ 
+  
