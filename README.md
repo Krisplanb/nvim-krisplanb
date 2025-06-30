@@ -32,10 +32,12 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
   - snacks.lua
     - changed cmd = "ascii-image-converter ~/Desktop/Others/profiles.JPG -C -c"
        - new location for assets = .config/nvim/assets
-       - changed from a static picture into a function that selects pictures dynamically
-- first time cloning to new system
+       - changed from a static picture into a function that selects pictures dynamically from assets folder
+- first time cloning to new system - fixed errors and reqs, made install guide.
+- second time cloning from git, went over install guide. found minor inconsistencies and errors. decide to make installation script.
+- third time try installation script
   
-### first time cloning
+## first time cloning
 - forgot to change a bunch of req(sethy.something) to req(krisplanb.samething)
 - lots of red text. need to run | sudo apt install -y build-essential
 - snacks.lua
@@ -47,8 +49,17 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
 - now stable
 - make a new vm start from scratch. follow instructions to see if it is complete.
 
-### second time cloning
-- 
+## second time cloning
+- nvim install went fine.
+- all apt installs fine.
+- forgot to change the dashboard function in git, error still there this time
+- issues with ascii-image converter. changed the way it was installed.
+- mason giving warnings about not installing pylint and isort, commented out.
+- installs seem to work fine now.
+- make installation script
+  
+## third time cloning
+-
 
 ### Installs
 - sudo apt install luarocks
@@ -61,13 +72,25 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
 - sudo apt install pylint isort
 - sudo npm install -g pyright
 
+- ascii image converter
+  - echo 'deb [trusted=yes] https://apt.fury.io/ascii-image-converter/ /' \
+  | sudo tee /etc/apt/sources.list.d/ascii-image-converter.list
+  - sudo apt update
+  - sudo apt install -y ascii-image-converter
+
 ## Neovim installation Ubuntu server 24.04
 ### i had a hard time figuring this out since im used to apt install, that leads to neovim 9.0 as of me writing this. had to learn a bit more about tarball to get version 11.2.
-- this is how i ended up doing it and having it work for me. im very open to other ways than this, i dont realy like it, but im not entierly sure why.
+- this is how i ended up doing it and having it work for me. im open to other ways than this because i dont realy like it, im not entierly sure why.
 
   - curl -LO https://github.com/neovim/neovim/releases/download/v0.11.2/nvim-linux-x86_64.tar.gz
   - tar xzvf nvim-linux-x86_64.tar.gz
   - sudo mv nvim-linux-x86_64 /opt/nvim
   - sudo ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim
- 
-  
+
+### config installation:
+- git clone https://github.com/Krisplanb/nvim-krisplanb.git /tmp/nvim-krisplanb
+- rm -rf ~/.config/nvim
+- mkdir -p ~/.config
+- cp -r /tmp/nvim-krisplanb/.config/nvim ~/.config/
+- rm -rf /tmp/nvim-krisplanb
+this should delete any old config, replace with this config and remove itw own temp files and dirs. 
