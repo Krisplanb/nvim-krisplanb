@@ -1,4 +1,4 @@
-require("sethy.core")
-require("sethy.lazy")
+require("krisplanb.core")
+require("krisplanb.lazy")
 require("current-theme")
-require("sethy.terminalpop")
+require("krisplanb.terminalpop")

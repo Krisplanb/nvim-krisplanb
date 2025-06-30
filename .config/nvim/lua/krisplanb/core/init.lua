@@ -1,2 +1,2 @@
-require('sethy.core.options')
-require("sethy.core.keymaps")
+require('krisplanb.core.options')
+require("krisplanb.core.keymaps")
