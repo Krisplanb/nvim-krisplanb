@@ -2,7 +2,6 @@
 ---
 
 ### ✅ `worklog.md`
-```markdown
 # Work Log
 
 This is a personal log of my progress and troubleshooting while building and testing my Neovim config.
@@ -68,3 +67,4 @@ curl -LO https://github.com/neovim/neovim/releases/download/v0.11.2/nvim-linux-x
 tar xzvf nvim-linux-x86_64.tar.gz
 sudo mv nvim-linux-x86_64 /opt/nvim
 sudo ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim
+```
