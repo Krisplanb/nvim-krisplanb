@@ -16,7 +16,7 @@ CONFIG_TARGET="$HOME/.config/nvim"
 git clone https://github.com/Krisplanb/nvim-krisplanb.git "$CONFIG_TEMP"
 rm -rf "$CONFIG_TARGET"
 mkdir -p "$HOME/.config"
-cp -r "$CONFIG_TEMP/config/nvim" "$CONFIG_TARGET"
+cp -r "$CONFIG_TEMP/.config/nvim" "$HOME/.config/"
 rm -rf "$CONFIG_TEMP"
 
 echo "=== Installing dependencies ==="
