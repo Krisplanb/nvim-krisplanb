@@ -59,7 +59,9 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
 - make installation script
   - as an atempt at saving time. i tried feeding this into chat gippity and asking for a setup script. for fun i wont check it before running it on the next VM.
 ## third time cloning
--
+- trying setup.
+  - gippity didnt know the repo structure and asumed wrong. fixed it and trying again.
+  - 
 
 ### Installs
 - sudo apt install luarocks
