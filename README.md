@@ -61,7 +61,7 @@ The base setup is adapted from [sin-cy's dotfiles](https://github.com/Sin-cy/dot
 ## third time cloning
 - trying setup.
   - gippity didnt know the repo structure and asumed wrong. fixed it and trying again.
-  - 
+  - tried setup again. works.
 
 ### Installs
 - sudo apt install luarocks
