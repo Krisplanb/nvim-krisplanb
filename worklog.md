@@ -17,8 +17,8 @@ This is a personal log of my progress and troubleshooting while building and tes
 ---
 
 ## 2025-06-29 – Second Time Cloning
-- Neovim and APT installs worked
-- Forgot to commit fix for dashboard function — same error appeared
+- Neovim and APT install-guides worked
+- Forgot to commit snacks- dashboard function to git last time — same error appeared
 - ASCII image converter had issues; changed install method
 - Commented out Mason warning about pylint/isort
 - Dependencies seem stable now
@@ -29,11 +29,11 @@ This is a personal log of my progress and troubleshooting while building and tes
 ## 2025-06-28 – First Time Cloning
 - Started from scratch on new VM
 - Many `require("sethy")` references — renamed to `krisplanb`
-- Missing `build-essential`, added via APT
-- `snacks.lua`: dashboard command needed function adjustment
+- `snacks.lua`: dashboard command got a function adjustment
 - Identified and documented missing dependencies
 - Learned that `apt install neovim` gives old version (v0.9)
 - Made guide for Neovim 0.11.2 tarball install
+- made a manual install guide
 - System stable after fixing config errors
 
 ---
